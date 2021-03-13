@@ -1,0 +1,375 @@
+/*Start global*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background: url("/images/bg.jpg") no-repeat center fixed;
+  background-size: cover;
+}
+
+section {
+  padding: 6rem 0;
+}
+
+p {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+img {
+  width: 100%;
+}
+/*End global*/
+a {
+  text-decoration: none;
+  color: #f07b7b;
+}
+
+/*Start reusable*/
+.container {
+  width: 90%;
+  max-width: 120rem;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.section-heading {
+  text-align: center;
+  margin-bottom: 10rem;
+}
+.section-heading h1 {
+  font-size: 3.5rem;
+  /* color: rgba(255, 255, 255, 0.3); */
+  text-transform: uppercase;
+  font-weight: 300;
+  position: relative;
+  margin-bottom: 1rem;
+}
+.section-heading h6 {
+  font-size: 1.6rem;
+  font-weight: 300;
+  background-color: #f07b7b;
+  border-radius: 18%;
+  color: #eee;
+}
+.has-margin-right {
+  margin-right: 5rem;
+}
+/* End reusable */
+
+/* Header */
+#main-header {
+  background-color: #cdcdcd;
+}
+#main-header h1 {
+  padding-top: 3rem;
+  font-style: italic;
+}
+
+li {
+  margin: 0 2rem;
+}
+/* navbar */
+#navbar {
+  background-color: #333;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-list {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+li {
+  margin: 0 2rem;
+}
+
+.nav-link {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+  padding: 1rem;
+}
+.nav-link:hover {
+  color: #7bd5f0;
+}
+.nav-list img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+.nav-list img:hover {
+  box-shadow: #f07b7b 10px 10px 10px 0px;
+}
+
+/* End navbar */
+/* End Header */
+
+/*Start about*/
+.about .container {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.about-heading {
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 0; /* 讓字重疊 about 和 myself*/
+  margin-bottom: 6rem;
+}
+
+.about-heading h1 {
+  font-size: 10rem;
+  opacity: 0.3;
+}
+.about-heading h6 {
+  font-size: 2rem;
+  color: #f07b7b;
+  font-weight: 600;
+}
+.about img {
+  box-shadow: 3px 3px 12px #000;
+}
+
+.profile-img {
+  flex: 1;
+  margin-right: 5rem;
+}
+.about-details {
+  flex: 1;
+}
+
+.social-media {
+  margin-top: 5rem;
+}
+
+.social-media i {
+  font-size: 5rem;
+  transition: color 650ms;
+}
+.fa-github-square:hover {
+  color: #4367b2;
+}
+.fa-facebook-square:hover {
+  color: #38a1f3;
+}
+.fa-dribbble-square:hover {
+  color: #ea4c89;
+}
+
+/*End about*/
+
+/*Start services*/
+.my-members {
+  margin-top: 10rem;
+  display: grid;
+  /* repeat方式來指定我要幾欄幾列 */
+  /* auot-fit自動填滿 */
+  /* minmax(最小值, 最大值) */
+  /* 如同RWD，最小只會在30rem，最大只會在1fr(他會做自動分配) */
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-gap: 2.5rem;
+  text-align: center;
+  align-items: flex-start;
+}
+.member {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.member-img {
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+.member-img img {
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  box-shadow: 3px 3px 12px #000;
+}
+
+.member h1 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 2rem -2px 2rem 0;
+}
+
+/*End services*/
+
+/*Start portfolio*/
+.portfolio-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+.portfolio-item:last-child {
+  margin-bottom: 0;
+}
+
+.portfolio-video {
+  flex: 1;
+  position: relative;
+  width: 50%;
+  height: 0;
+  padding-bottom: 30%;
+}
+.portfolio-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio-description {
+  flex: 1;
+}
+.portfolio-description h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  margin: 1rem 0;
+}
+
+.portfolio-description h6 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #f07b7b;
+}
+/*End portfolio*/
+
+/*Start contact*/
+
+.contact {
+  background-color: #cdcdcd;
+}
+
+form {
+  width: 70%;
+  margin: 0 auto;
+}
+form label {
+  font-size: 1.5rem;
+}
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 5px;
+  border: none;
+  outline-color: #f07b7b;
+}
+
+/*End contact*/
+
+/*End footer*/
+.copyright {
+  text-align: center;
+  height: 5rem;
+  margin-top: 4rem;
+}
+
+.copyright p {
+  font-size: 1.4rem;
+}
+
+.up {
+  width: 5rem;
+  height: 5rem;
+  position: fixed;
+  top: 90%;
+  right: 5rem;
+  display: flex;
+  background-color: #f07b7b;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.up i {
+  margin: auto;
+  color: #333;
+}
+/*Start footer*/
+
+@media screen and (max-width: 768px) {
+  #main-header {
+    max-height: 30rem;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+  }
+
+  #main-header h1,
+  nav {
+    display: none;
+  }
+  .about .container {
+    flex-direction: column;
+  }
+  .about-heading h1 {
+    font-size: 8rem;
+  }
+  .about-details li {
+    margin: 0 2rem;
+  }
+  .profile-img {
+    margin: 0 0 7rem 0;
+  }
+  .portfolio-item {
+    flex-direction: column;
+  }
+
+  .portfolio-video {
+    margin: 0 0 2rem 0;
+    order: 1;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.7%;
+  }
+  .portfolio-video iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+  .portfolio-description {
+    margin: 0;
+    order: 2;
+  }
+  form {
+    width: 100%;
+  }
+  .up {
+    right: 1rem;
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+}
