@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hummingbird（gihub)</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
@@ -14,6 +15,13 @@
     />
   </head>
   <body onload="init()">
+    <!-- <body
+    onload="init()"
+    style="
+      background: url('images/bg.jpg') no-repeat center fixed;
+      background-size: cover;
+    "
+  > -->
     <header id="main-header">
       <div class="container">
         <h1>Hummingbird | Home</h1>
@@ -46,10 +54,10 @@
     </section> -->
     <section class="about" id="about">
       <div class="container">
-        <div class="profile-img" data-aos="fade-right" data-aos-delay="300">
+        <div class="profile-img" data-aos="fade-right" data-aos-delay="150">
           <img src="images/about.jpg" alt="" />
         </div>
-        <div class="about-details" data-aos="fade-left" data-aos-delay="300">
+        <div class="about-details" data-aos="fade-left" data-aos-delay="150">
           <div class="about-heading">
             <h1>About</h1>
             <h6>Hummingbird</h6>
@@ -96,7 +104,15 @@
                   target="_blank"
                 >
                   <img src="images/yt.png" alt="" width="50px" height="50px" />
-                  <!-- <div class="social-media-img"></div> -->
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://soundcloud.com/user-822833571"
+                  class="icon-link"
+                  target="_blank"
+                >
+                  <img src="images/sc.png" alt="" width="50px" height="50px" />
                 </a>
               </li>
             </ul>
@@ -107,7 +123,7 @@
     <!-- About End -->
 
     <section class="member" id="member">
-      <div class="container">
+      <div class="container" data-aos="fade-down" data-aos-delay="300">
         <div class="section-heading">
           <h1>Members</h1>
           <h6>Who we are</h6>
@@ -164,15 +180,24 @@
         </div>
 
         <div class="portfolio-item">
-          <div class="portfolio-video has-margin-right">
+          <div
+            class="portfolio-video has-margin-right"
+            data-aos="fade-right"
+            data-aos-delay="300"
+          >
             <iframe
               src="https://www.youtube.com/embed/59BDnWTJ8XA"
               frameborder="0"
               allowfullscreen
             ></iframe>
           </div>
-          <div class="portfolio-description">
+          <div
+            class="portfolio-description"
+            data-aos="fade-left"
+            data-aos-delay="300"
+          >
             <h6>台語、中文</h6>
+            <h6>Taiwanese, Chinese (CC.: Japanes, German, English)</h6>
             <h1>青春，台南 My life, Tainan</h1>
             <p>一首獻給台南的歌，也獻給當時的青春回憶</p>
             <p>
@@ -183,8 +208,13 @@
         </div>
 
         <div class="portfolio-item">
-          <div class="portfolio-description has-margin-right">
-            <h6>台語、中文、英文</h6>
+          <div
+            class="portfolio-description has-margin-right"
+            data-aos="fade-right"
+            data-aos-delay="600"
+          >
+            <h6>台語、中文、英文|Taiwanese, Chinese, English</h6>
+            <h6>Taiwanese, Chinese, English</h6>
             <h1>還環相扣 Between Us</h1>
             <p>環保其實不難 從小小地方做起一點點累積 群體就是力量</p>
             <p>Eco-friendly is not difficult. The group is the power.</p>
@@ -192,7 +222,7 @@
           <div
             class="portfolio-video"
             data-aos="fade-left"
-            data-aos-delay="1200"
+            data-aos-delay="600"
           >
             <iframe
               src="https://www.youtube.com/embed/HLSsWdpGHlE"
@@ -203,15 +233,24 @@
         </div>
 
         <div class="portfolio-item">
-          <div class="portfolio-video has-margin-right">
+          <div
+            class="portfolio-video has-margin-right"
+            data-aos="fade-right"
+            data-aos-delay="900"
+          >
             <iframe
               src="https://www.youtube.com/embed/w_s0wD3c4a0"
               frameborder="0"
               allowfullscreen
             ></iframe>
           </div>
-          <div class="portfolio-description">
-            <h6>台語、中文、英文</h6>
+          <div
+            class="portfolio-description"
+            data-aos="fade-left"
+            data-aos-delay="900"
+          >
+            <h6>台語、中文、英文|Taiwanese, Chinese, English</h6>
+            <h6>Taiwanese, Chinese, English(CC.: Japanes, German, English)</h6>
             <h1>心念情 - Missing You by Heart</h1>
             <p>祝全天下的母親，母親節快樂！</p>
             <br />
@@ -229,7 +268,7 @@
           <h1>Contact</h1>
           <h6>Let's Play Music together</h6>
         </div>
-        <form>
+        <form data-aos="fade-up" data-aos-delay="300">
           <label for="name">Name:</label>
           <input
             type="text"
@@ -283,7 +322,7 @@
       </a>
       <p>&copy; 2021 Hummingbird</p>
     </footer>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
