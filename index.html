@@ -13,7 +13,7 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
+  <body onload="init()">
     <header id="main-header">
       <div class="container">
         <h1>Hummingbird | Home</h1>
@@ -126,7 +126,7 @@
             <br />
             <p>
               Born in Kaohsiung, Taiwan. I love to share, discuss with others,
-              and explore various music and knowledge. As the lead singer of the
+              and explore various music and knowledge. As the singer of the
               band, I specialize in whistling and kazoo. Enjoys humming random
               songs and writing stories to music.
             </p>
@@ -229,27 +229,48 @@
           <h1>Contact</h1>
           <h6>Let's Play Music together</h6>
         </div>
-        <form action="" data-aos="fade-up" data-aos-delay="300">
+        <form>
           <label for="name">Name:</label>
           <input
             type="text"
             name="name"
-            id="name"
+            id="nameText"
             placeholder="Enter your name..."
             required
           />
+
           <label for="email">Email:</label>
           <input
             type="email"
             name="email"
-            id="email"
+            id="emailText"
             placeholder="Enter your email..."
             required
           />
 
           <label for="subject">Subject:</label>
-          <textarea name="subject" id="subject" cols="10" rows="10"></textarea>
-          <input type="submit" value="Submit" />
+          <input
+            type="subject"
+            name="subject"
+            id="subText"
+            placeholder="Subject..."
+            required
+          />
+
+          <label for="bodyText">Message:</label>
+          <textarea
+            name="bodyText"
+            id="bodyText"
+            cols="10"
+            rows="10"
+            aria-required="true"
+            required
+          ></textarea>
+
+          <div>
+            <input type="button" value="submit" onclick="submitHandler();" />
+            <a id="mailTo"></a>
+          </div>
         </form>
       </div>
     </section>
@@ -260,8 +281,9 @@
           <i class="fas fa-chevron-up"> </i>
         </div>
       </a>
-
       <p>&copy; 2021 Hummingbird</p>
     </footer>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
