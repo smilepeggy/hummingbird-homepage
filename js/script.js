@@ -17,14 +17,45 @@ function submitHandler() {
   mailTo.click();
 }
 //在body onload
-function init() {
-  subText.value = initSubject;
-  toText.value = initTo;
-  bodyText.value = initBody;
-}
+// function init() {
+//   subText.value = initSubject;
+//   toText.value = initTo;
+//   bodyText.value = initBody;
+// }
 
 AOS.init({
   easing: "ease",
   duration: 1800,
   once: true,
 });
+let lan = document.getElementById("lan-btns");
+lan.onchange = function changeLan() {
+  console.log(lan.value, lan.value === "cn");
+
+  if (lan.value === "en") {
+    // alert("en");
+    document.body.className = "en-active";
+  } else if (lan.value === "cn") {
+    // alert("cn");
+
+    document.body.className = "cn-active";
+  }
+};
+// console.log(typeof lan);
+// console.log(lan);
+
+// // en-acctive
+// let enBtn = document.querySelector(".en-btn");
+// enBtn.onclick = function enActive() {
+//   document.body.className = "en-active";
+// };
+// // cn-acctive
+// let cnBtn = document.querySelector(".cn-btn");
+// cnBtn.onclick = function cnActive() {
+//   document.body.className = "cn-active";
+// };
+// // en-acctive
+// let enBtn = document.queryCommandValue(".en-btn");
+// enBtn.onclick = function enActive(){
+//   document.body.className="en-active";
+// }

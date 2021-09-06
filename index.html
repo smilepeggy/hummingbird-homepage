@@ -1,46 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hummingbird（gihub)</title>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body onload="init()">
-    <!-- <body
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hummingbird（gihub)</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+</head>
+
+<body class="en-active">
+  <!-- onload="init()" -->
+  <!-- <body
     onload="init()"
     style="
       background: url('images/bg.jpg') no-repeat center fixed;
       background-size: cover;
     "
   > -->
-    <header id="main-header">
-      <div class="container">
-        <h1>Hummingbird | Home</h1>
-        <img src="images/hummungbird.png" alt="" />
-      </div>
-    </header>
-    <nav id="navbar">
-      <div class="container">
-        <ul class="nav-list">
-          <li><a href="#" class="nav-link">首頁</a></li>
-          <li><a href="#about" class="nav-link">關於</a></li>
-          <li><a href="#member" class="nav-link">成員介紹</a></li>
-          <li><a href="#portfolio" class="nav-link">作品</a></li>
-          <li><a href="#contact" class="nav-link">聯絡方式</a></li>
-        </ul>
-      </div>
-    </nav>
 
-    <!-- <section id="about">
+
+  <header id="main-header">
+    <div class="container">
+      <h1>Hummingbird | Home</h1>
+      <img src="images/hummungbird.png" alt="" />
+    </div>
+  </header>
+  <nav id="navbar">
+    <div class="container">
+      <ul class="nav-list cn">
+        <li><a href="#" class="nav-link">首頁</a></li>
+        <li><a href="#about" class="nav-link">關於</a></li>
+        <li><a href="#member" class="nav-link">成員介紹</a></li>
+        <li><a href="#portfolio" class="nav-link">作品</a></li>
+        <li><a href="#contact" class="nav-link">聯絡方式</a></li>
+      </ul>
+      <ul class="nav-list en">
+        <li><a href="#" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#member" class="nav-link">Members</a></li>
+        <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <select id="lan-btns">
+        <option value="en">English</option>
+        <option value="cn">中文</option>
+      </select>
+    </div>
+    <!-- <div class="">
+      <button class="en-btn"> English</button>
+      <button class="cn-btn">中文</button>
+      <button class="de-btn">Deutsch 🇩🇪 </button>
+    </div> -->
+
+  </nav>
+
+  <!-- <section id="about">
       <div class="container">
         <div class="about-item">
           <h1 class="about-title">關於 Hummingbird</h1>
@@ -52,277 +72,203 @@
         </div>
       </div>
     </section> -->
-    <section class="about" id="about">
-      <div class="container">
-        <div class="profile-img" data-aos="fade-right" data-aos-delay="150">
-          <img src="images/about.jpg" alt="" />
+  <section id="about">
+    <div class="container">
+      <div class="profile-img" data-aos="fade-right" data-aos-delay="50">
+        <img src="images/about.jpg" alt="" />
+      </div>
+      <div class="about-details" data-aos="fade-left" data-aos-delay="50">
+        <div class="about-heading">
+          <h1>About</h1>
+          <h6>Hummingbird</h6>
         </div>
-        <div class="about-details" data-aos="fade-left" data-aos-delay="150">
-          <div class="about-heading">
-            <h1>About</h1>
-            <h6>Hummingbird</h6>
-          </div>
-          <!-- <p>
+        <!-- <p>
             來自台南成大吉他社，為木吉他、人聲及打擊樂的acoustic組合,由於曾因緣際會待過東海岸一段時日，希望也能將台南的熱情及東岸的愜意加入音樂帶給大家，曲風橫跨5~60年代的民歌到現今的流行歌,表演風格自由隨性而不失本質
           </p>
           <br /> -->
-          <p>
-            The acoustic group of acoustic guitar, vocals and percussion is from
-            Tainan National University Cheng Kung Guitar Club. Since we have
-            spent some time on the East Coast of Taiwan, we hope to bring the
-            warmth of Tainan and the comfort of the East Coast to the music.
+        <p>
+          The acoustic group of acoustic guitar, vocals and percussion is from
+          Tainan National University Cheng Kung Guitar Club. Since we have
+          spent some time on the East Coast of Taiwan, we hope to bring the
+          warmth of Tainan and the comfort of the East Coast to the music.
+        </p>
+        <br />
+        <p>
+          The style of music from folk songs of the 1950~1960s to pop songs of
+          today, and the performance style is free and spontaneous without
+          losing its essence.
+        </p>
+        <div class="social-media">
+          <ul class="link-list">
+            <li>
+              <a href="https://www.facebook.com/Hummingbird-140984069973539/" class="icon-link" target="_blank">
+                <img src="images/fb.png" alt="" width="50px" height="50px" />
+              </a>
+            </li>
+            <li>
+              <a href="https://streetvoice.com/hummingbird2019/" class="icon-link" target="_blank">
+                <img src="images/st.png" alt="" width="50px" height="50px" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/channel/UCKewVIUajDYL-HolO8vppuA/featured" class="icon-link"
+                target="_blank">
+                <img src="images/yt.png" alt="" width="50px" height="50px" />
+              </a>
+            </li>
+            <li>
+              <a href="https://soundcloud.com/user-822833571" class="icon-link" target="_blank">
+                <img src="images/sc.png" alt="" width="50px" height="50px" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About End -->
+
+  <section class="member" id="member">
+    <div class="container" data-aos="fade-down" data-aos-delay="300">
+      <div class="section-heading">
+        <h1>Members</h1>
+        <h6>Who we are</h6>
+      </div>
+      <div class="my-members">
+        <div class="member">
+          <div class="member-img">
+            <img src="images/peggy.png" alt="" />
+          </div>
+          <h1>Peggy Wang</h1>
+          <p class="cn">
+            出生於台灣高雄市。 熱愛分享，喜歡與人討論，探索各種音樂、知識。
+            擔任樂團主唱，擅長口哨以及卡祖笛。
+            喜歡隨意哼唱歌曲，並把故事寫成音樂。
           </p>
           <br />
-          <p>
-            The style of music from folk songs of the 1950~1960s to pop songs of
-            today, and the performance style is free and spontaneous without
-            losing its essence.
+          <p class="en">
+            Born in Kaohsiung, Taiwan. I love to share, discuss with others,
+            and explore various music and knowledge. As the singer of the
+            band, I specialize in whistling and kazoo. Enjoys humming random
+            songs and writing stories to music.
           </p>
-          <div class="social-media">
-            <ul class="nav-list">
-              <li>
-                <a
-                  href="https://www.facebook.com/Hummingbird-140984069973539/"
-                  class="icon-link"
-                  target="_blank"
-                >
-                  <img src="images/fb.png" alt="" width="50px" height="50px" />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://streetvoice.com/hummingbird2019/"
-                  class="icon-link"
-                >
-                  <img src="images/st.png" alt="" width="50px" height="50px" />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.youtube.com/channel/UCKewVIUajDYL-HolO8vppuA/featured"
-                  class="icon-link"
-                  target="_blank"
-                >
-                  <img src="images/yt.png" alt="" width="50px" height="50px" />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://soundcloud.com/user-822833571"
-                  class="icon-link"
-                  target="_blank"
-                >
-                  <img src="images/sc.png" alt="" width="50px" height="50px" />
-                </a>
-              </li>
-            </ul>
+        </div>
+        <div class="member">
+          <div class="member-img">
+            <img src="images/jim copy.jpg" alt="" />
           </div>
+          <h1>Chen Chun Shuo</h1>
+          <p class="cn">
+            出生於台灣台中市。 熱愛嘗試各種曲風。
+            擔任Hummingbird樂團樂手，擅長把主唱哼唱的音符編織成美好的旋律。
+            嘗試各種曲風，現在於中國餐廳擔任樂團鍵盤手，持續進步中。
+          </p>
+          <br />
+          <p class="en">
+            Born in Taichung, Taiwan. I have a passion for experimenting with
+            various music styles. As the instrumental performer of
+            Hummingbird, I am good at weaving the notes hummed by the Peggy
+            into beautiful melodies. I am now working in a Chinese restaurant
+            (China) as a keyboardist and continue to improve.
+          </p>
         </div>
       </div>
-    </section>
-    <!-- About End -->
+    </div>
+  </section>
+  <!-- Section End -->
 
-    <section class="member" id="member">
-      <div class="container" data-aos="fade-down" data-aos-delay="300">
-        <div class="section-heading">
-          <h1>Members</h1>
-          <h6>Who we are</h6>
+  <!-- portfolio -->
+  <section id="portfolio">
+    <div class="container">
+      <div class="section-heading">
+        <h1>Portfolio</h1>
+        <h6>Different styles of compose</h6>
+      </div>
+
+      <div class="portfolio-item">
+        <div class="portfolio-video has-margin-right" data-aos="fade-right" data-aos-delay="300">
+          <iframe src="https://www.youtube.com/embed/59BDnWTJ8XA" frameborder="0" allowfullscreen></iframe>
         </div>
-        <div class="my-members">
-          <div class="member">
-            <div class="member-img">
-              <img src="images/peggy.png" alt="" />
-            </div>
-            <h1>Peggy Wang</h1>
-            <p>
-              出生於台灣高雄市。 熱愛分享，喜歡與人討論，探索各種音樂、知識。
-              擔任樂團主唱，擅長口哨以及卡祖笛。
-              喜歡隨意哼唱歌曲，並把故事寫成音樂。
-            </p>
-            <br />
-            <p>
-              Born in Kaohsiung, Taiwan. I love to share, discuss with others,
-              and explore various music and knowledge. As the singer of the
-              band, I specialize in whistling and kazoo. Enjoys humming random
-              songs and writing stories to music.
-            </p>
-          </div>
-          <div class="member">
-            <div class="member-img">
-              <img src="images/jim copy.jpg" alt="" />
-            </div>
-            <h1>Chen Chun Shuo</h1>
-            <p>
-              出生於台灣台中市。 熱愛嘗試各種曲風。
-              擔任Hummingbird樂團樂手，擅長把主唱哼唱的音符編織成美好的旋律。
-              嘗試各種曲風，現在於中國餐廳擔任樂團鍵盤手，持續進步中。
-            </p>
-            <br />
-            <p>
-              Born in Taichung, Taiwan. I have a passion for experimenting with
-              various music styles. As the instrumental performer of
-              Hummingbird, I am good at weaving the notes hummed by the Peggy
-              into beautiful melodies. I am now working in a Chinese restaurant
-              (China) as a keyboardist and continue to improve.
-            </p>
-          </div>
+        <div class="portfolio-description" data-aos="fade-left" data-aos-delay="300">
+          <h6>台語、中文</h6>
+          <h6>Taiwanese, Chinese (CC.: Japanes, German, English)</h6>
+          <h1>青春，台南 My life, Tainan</h1>
+          <p>一首獻給台南的歌，也獻給當時的青春回憶</p>
+          <p>
+            A song dedicated to Tainan and to the memories of the youth at
+            that time
+          </p>
         </div>
       </div>
-    </section>
-    <!-- Section End -->
 
-    <!-- portfolio -->
-    <section class="portfolio" id="portfolio">
-      <div class="container">
-        <div class="section-heading">
-          <h1>Portfolio</h1>
-          <h6>Different styles of compose</h6>
+      <div class="portfolio-item">
+        <div class="portfolio-description has-margin-right" data-aos="fade-right" data-aos-delay="600">
+          <h6>台語、中文、英文 | Taiwanese, Chinese, English</h6>
+          <h6>Taiwanese, Chinese, English</h6>
+          <h1>還環相扣 Between Us</h1>
+          <p>環保其實不難 從小小地方做起一點點累積 群體就是力量</p>
+          <p>Eco-friendly is not difficult. The group is the power.</p>
         </div>
-
-        <div class="portfolio-item">
-          <div
-            class="portfolio-video has-margin-right"
-            data-aos="fade-right"
-            data-aos-delay="300"
-          >
-            <iframe
-              src="https://www.youtube.com/embed/59BDnWTJ8XA"
-              frameborder="0"
-              allowfullscreen
-            ></iframe>
-          </div>
-          <div
-            class="portfolio-description"
-            data-aos="fade-left"
-            data-aos-delay="300"
-          >
-            <h6>台語、中文</h6>
-            <h6>Taiwanese, Chinese (CC.: Japanes, German, English)</h6>
-            <h1>青春，台南 My life, Tainan</h1>
-            <p>一首獻給台南的歌，也獻給當時的青春回憶</p>
-            <p>
-              A song dedicated to Tainan and to the memories of the youth at
-              that time
-            </p>
-          </div>
-        </div>
-
-        <div class="portfolio-item">
-          <div
-            class="portfolio-description has-margin-right"
-            data-aos="fade-right"
-            data-aos-delay="600"
-          >
-            <h6>台語、中文、英文|Taiwanese, Chinese, English</h6>
-            <h6>Taiwanese, Chinese, English</h6>
-            <h1>還環相扣 Between Us</h1>
-            <p>環保其實不難 從小小地方做起一點點累積 群體就是力量</p>
-            <p>Eco-friendly is not difficult. The group is the power.</p>
-          </div>
-          <div
-            class="portfolio-video"
-            data-aos="fade-left"
-            data-aos-delay="600"
-          >
-            <iframe
-              src="https://www.youtube.com/embed/HLSsWdpGHlE"
-              frameborder="0"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </div>
-
-        <div class="portfolio-item">
-          <div
-            class="portfolio-video has-margin-right"
-            data-aos="fade-right"
-            data-aos-delay="900"
-          >
-            <iframe
-              src="https://www.youtube.com/embed/w_s0wD3c4a0"
-              frameborder="0"
-              allowfullscreen
-            ></iframe>
-          </div>
-          <div
-            class="portfolio-description"
-            data-aos="fade-left"
-            data-aos-delay="900"
-          >
-            <h6>台語、中文、英文|Taiwanese, Chinese, English</h6>
-            <h6>Taiwanese, Chinese, English(CC.: Japanes, German, English)</h6>
-            <h1>心念情 - Missing You by Heart</h1>
-            <p>祝全天下的母親，母親節快樂！</p>
-            <br />
-            <p>Glückwünsche zum Muttertag!</p>
-            <br />
-            <p>Happy Mother's Day!</p>
-          </div>
+        <div class="portfolio-video" data-aos="fade-left" data-aos-delay="600">
+          <iframe src="https://www.youtube.com/embed/HLSsWdpGHlE" frameborder="0" allowfullscreen></iframe>
         </div>
       </div>
-    </section>
 
-    <section class="contact" id="contact">
-      <div class="container">
-        <div class="section-heading">
-          <h1>Contact</h1>
-          <h6>Let's Play Music together</h6>
+      <div class="portfolio-item">
+        <div class="portfolio-video has-margin-right" data-aos="fade-right" data-aos-delay="900">
+          <iframe src="https://www.youtube.com/embed/w_s0wD3c4a0" frameborder="0" allowfullscreen></iframe>
         </div>
-        <form data-aos="fade-up" data-aos-delay="300">
-          <label for="name">Name:</label>
-          <input
-            type="text"
-            name="name"
-            id="nameText"
-            placeholder="Enter your name..."
-            required
-          />
-
-          <label for="email">Email:</label>
-          <input
-            type="email"
-            name="email"
-            id="emailText"
-            placeholder="Enter your email..."
-            required
-          />
-
-          <label for="subject">Subject:</label>
-          <input
-            type="subject"
-            name="subject"
-            id="subText"
-            placeholder="Subject..."
-            required
-          />
-
-          <label for="bodyText">Message:</label>
-          <textarea
-            name="bodyText"
-            id="bodyText"
-            cols="10"
-            rows="10"
-            aria-required="true"
-            required
-          ></textarea>
-
-          <div>
-            <input type="button" value="submit" onclick="submitHandler();" />
-            <a id="mailTo"></a>
-          </div>
-        </form>
+        <div class="portfolio-description" data-aos="fade-left" data-aos-delay="900">
+          <h6>台語、中文、英文 | Taiwanese, Chinese, English</h6>
+          <h6>Taiwanese, Chinese, English (CC.: Japanes, German, English)</h6>
+          <h1>心念情 - Missing You by Heart</h1>
+          <p>祝全天下的母親，母親節快樂！</p>
+          <br />
+          <p>Glückwünsche zum Muttertag!</p>
+          <br />
+          <p>Happy Mother's Day!</p>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <footer class="copyright">
-      <a href="#main-header">
-        <div class="up" id="up">
-          <i class="fas fa-chevron-up"> </i>
+  <section id="contact">
+    <div class="container">
+      <div class="section-heading">
+        <h1>Contact</h1>
+        <h6>Let's Play Music together</h6>
+      </div>
+      <form data-aos="fade-up" data-aos-delay="300">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="nameText" placeholder="Enter your name..." required />
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="emailText" placeholder="Enter your email..." required />
+
+        <label for="subject">Subject:</label>
+        <input type="subject" name="subject" id="subText" placeholder="Subject..." required />
+
+        <label for="bodyText">Message:</label>
+        <textarea name="bodyText" id="bodyText" cols="10" rows="10" aria-required="true" required></textarea>
+
+        <div>
+          <input type="button" value="submit" onclick="submitHandler();" />
+          <a id="mailTo"></a>
         </div>
-      </a>
-      <p>&copy; 2021 Hummingbird</p>
-    </footer>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="js/script.js"></script>
-  </body>
+      </form>
+    </div>
+  </section>
+
+  <footer class="copyright">
+    <a href="#main-header">
+      <div class="up">
+        <i class="fas fa-chevron-up"> </i>
+      </div>
+    </a>
+    <p>&copy; 2021 Hummingbird</p>
+  </footer>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
 </html>
